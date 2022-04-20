@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#009688"
+        tools:context=".TasbeehFragment">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="405dp"
+        android:layout_height="195dp"
+        android:gravity="center"
+        android:text="Xanım Fatimeyi Zəhra (ə) Zikri"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/button"
+        android:onClick="art3"
+        android:text="Allahu-Akbar"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/button"
+            android:onClick="art3"
+            android:text="Əlhəmdulillah"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/button"
+            android:onClick="art3"
+            android:text="Yenidən zikr et"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/button"
+            android:onClick="art3"
+            android:text="SubhanAllah"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="293dp"
+            android:layout_height="332dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            android:rotation="-90"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            tools:progress="10" />
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="132dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="536dp"
+            android:background="@drawable/circle"
+            android:text="Reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
