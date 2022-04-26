@@ -1,193 +1,374 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp"
         tools:context=".fragment.AzanFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
-    <ImageView
-        android:id="@+id/idTasbeeh"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/tasbeeh"
-        android:layout_weight="1"
-        android:background="@drawable/kvadrat"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp" />
-        <ImageView
-            android:id="@+id/idBook"
-            android:background="@drawable/kvadrat"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/book"
-            android:layout_weight="1"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp" />
-        <ImageView
-            android:id="@+id/idCompass"
-            android:layout_width="100dp"
-            android:background="@drawable/kvadrat"
-            android:layout_height="100dp"
-            android:src="@drawable/compas"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:layout_marginTop="10dp" />
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp">
 
-    <LinearLayout
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prayertimelogo" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="Azan"
+                android:textColor="#00004B"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/sp_option"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="0dp">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/azan"
-                />
+                android:id="@+id/idTasbeeh"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="78px"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:src="@drawable/tasbeeh"
+                android:background="@drawable/circle2"/>
+            <ImageView
+                android:id="@+id/idZikr"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="78px"
+                android:layout_weight="1"
+                android:background="@drawable/circle2"
+                android:src="@drawable/zikrmatik" />
+            <ImageView
+                android:id="@+id/idQuran"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="78px"
+                android:layout_weight="1"
+                android:layout_margin="10sp"
+                android:src="@drawable/bookicon2"
+                android:background="@drawable/circle2"/>
+            <ImageView
+                android:id="@+id/idCompass"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="78px"
+                android:layout_weight="1"
+                android:layout_margin="10sp"
+                android:src="@drawable/compass"
+                android:background="@drawable/circle2"/>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="287dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gündəlik namazlar"
+            android:textColor="#3DBFAE"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/teqvimGunu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18.04.2022"
+            android:textColor="#1C2C3B"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="388dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/timeback"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sübh namazı"
-                android:textSize="25dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sübh"
+                android:textColor="#1C2C3B"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/subhTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="time"
-                android:textSize="25dp"
-                android:gravity="end"
-                android:layout_marginRight="20dp"
-                android:layout_marginEnd="20dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="00:00 am"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/azan"
-                />
+                android:id="@+id/bellsubhwhite"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/belliconwhite" />
+            <ImageView
+                android:id="@+id/bellsubhgreen"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/bellicon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="388dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/timeback"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Zöhr namazı"
-                android:textSize="25dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Gün çıxma"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/gunCixma"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="00:00 am"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/bellsunwhite"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/belliconwhite" />
+
+            <ImageView
+                android:id="@+id/bellsungreen"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/bellicon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="388dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/timeback"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Zöhr"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/ZohrTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="time"
-                android:textSize="25dp"
-                android:gravity="end"
-                android:layout_marginRight="20dp"
-                android:layout_marginEnd="20dp"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="00:00 pm"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/azan"
-                />
+                android:id="@+id/bellzohrwhite"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/belliconwhite" />
+            <ImageView
+                android:id="@+id/bellzohrgreen"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/bellicon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="388dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/timeback"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Asr namazı"
-                android:textSize="25dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Əsr"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/AsrTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="time"
-                android:textSize="25dp"
-                android:gravity="end"
-                android:layout_marginRight="20dp"
-                android:layout_marginEnd="20dp"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="00:00 pm"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/azan"
-                />
+                android:id="@+id/bellasrwhite"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/belliconwhite" />
+            <ImageView
+                android:id="@+id/bellasrgreen"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/bellicon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="388dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/timeback"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Şam namazı"
-                android:textSize="25dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Şam"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/ShamTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="time"
-                android:textSize="25dp"
-                android:gravity="end"
-                android:layout_marginRight="20dp"
-                android:layout_marginEnd="20dp"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="00:00 pm"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/azan"
-                />
+                android:id="@+id/bellshamwhite"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/belliconwhite" />
+            <ImageView
+                android:id="@+id/bellshamgreen"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/bellicon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayou8"
+            android:layout_width="388dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/timeback"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="İşa namazı"
-                android:textSize="25dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="İşa"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/ishaTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="time"
-                android:textSize="25dp"
-                android:gravity="end"
-                android:layout_marginRight="20dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="00:00 pm"
+                android:textColor="#1C2C3B"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/bellishawhite"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/belliconwhite" />
+            <ImageView
+                android:id="@+id/bellishagreen"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/bellicon" />
         </LinearLayout>
 
-
-    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

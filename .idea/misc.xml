@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/bellicon.xml" value="0.3145" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/belliconwhite.xml" value="0.3145" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/bookicon.xml" value="0.3145" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/circle.xml" value="0.342" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/circle2.xml" value="0.3145" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/circle3.xml" value="0.342" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/iconinfo.xml" value="0.3145" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/row_item.xml" value="0.2095" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/drawable/timeback.xml" value="0.3145" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/activity_dest.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/activity_main.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/ayah_fragment.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/azan_fragment.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/fragment_tasbeeh.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/fragment_zikr.xml" value="0.5712309820193637" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/quran_fragment.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/row_ayah.xml" value="0.3625" />
+        <entry key="..\:/Users/Amrah/StudioProjects/PrayerTimeAzan/app/src/main/res/layout/row_item.xml" value="0.3482789855072464" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PrayerTime/app/src/main/res/drawable/azan.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PrayerTime/app/src/main/res/drawable/button.xml" value="0.1925925925925926" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PrayerTime/app/src/main/res/drawable/circle.xml" value="0.1925925925925926" />
@@ -14,7 +32,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

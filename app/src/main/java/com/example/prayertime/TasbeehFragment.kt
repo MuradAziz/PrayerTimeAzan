@@ -58,8 +58,8 @@ class TasbeehFragment : Fragment() {
             }
         }
         button3.setOnClickListener {
-            if(prog<=90){
-                prog+=5
+            if(prog<=180){
+                prog+=1
                 progressBar.progress=prog
             }
             number = number + 1

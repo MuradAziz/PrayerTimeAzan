@@ -5,9 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".fragment.AyahFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_ayah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:id="@+id/ayaLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
+
+    </ProgressBar>
 </FrameLayout>

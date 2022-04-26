@@ -15,22 +15,8 @@ class AzanApiService {
         .build()
         .create(AzanApi::class.java)
 
-    fun getData(): Single<Salah>{
-        return api.getApi()
+    fun getData(city: String): Single<Salah>{
+        return api.getApi(city)
     }
 
 }
-/*
-  private val base_url="http://api.alquran.cloud/v1/"
-    private val api=Retrofit.Builder()
-        .baseUrl(base_url)
-        .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
-        .create(PhoneApi::class.java)
-
-    fun getData(): Single<List<Phones>>{
-        return api.getPhones()
-    }
-}
- */

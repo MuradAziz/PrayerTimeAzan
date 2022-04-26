@@ -16,6 +16,12 @@
         <action
             android:id="@+id/action_azanFragment_to_compassActivity"
             app:destination="@id/compassActivity" />
+        <action
+            android:id="@+id/action_azanFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_azanFragment_to_zikrFragment"
+            app:destination="@id/zikrFragment" />
     </fragment>
     <fragment
         android:id="@+id/tasbeehFragment"
@@ -31,4 +37,28 @@
         android:name="com.example.prayertime.CompassActivity"
         android:label="activity_compass"
         tools:layout="@layout/activity_compass" />
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.prayertime.fragment.QuranFragment"
+        android:label="quran_fragment"
+        tools:layout="@layout/quran_fragment" >
+        <action
+            android:id="@+id/action_quranFragment_to_ayahFragment"
+            app:destination="@id/ayahFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayahFragment"
+        android:name="com.example.prayertime.fragment.AyahFragment"
+        android:label="ayah_fragment"
+        tools:layout="@layout/ayah_fragment" >
+        <argument
+            android:name="ayah"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/zikrFragment"
+        android:name="com.example.prayertime.ZikrFragment"
+        android:label="fragment_zikr"
+        tools:layout="@layout/fragment_zikr" />
 </navigation>

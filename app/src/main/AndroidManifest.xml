@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrayerTime">
         <activity
+            android:name=".util.DestActivity"
+            android:exported="false" />
+        <activity
             android:name=".CompassActivity"
             android:exported="false" />
         <activity
@@ -24,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<receiver android:name=".util.AlarmReceiver"/>
     </application>
 
 </manifest>
